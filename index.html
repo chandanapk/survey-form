@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <div id="background-img"></div>
+    <main>
+      <h1 id="title">freeCodeCamp - Survey Form</h1>
+      <p id="description">Thank you for taking your time for our survey to improve the platform</p>
+      <form id="survey-form">
+        <fieldset class="personal-info"><label for="name" id="name-label">Name<input id="name" type="text" required placeholder=" Enter Your Name" class="border-radius"></label>
+       <label for="email" id="email-label">Email<input id="email" type="email" required placeholder=" Enter Your Email" class="border-radius"></label>
+       <label for="number" id="number-label">Age<input id="number" type="number" required min="12" max="120" placeholder=" Age" class="border-radius"></label>
+       <label for="current-role">Which option best describes your current role?
+         <select id="dropdown" class="border-radius">
+           <option> Student</option>
+           <option> Full Time Employee</option>
+           <option> Part Time Employee</option>
+
+         </select>
+       </label>
+      </fieldset>
+      <fieldset>
+       <label for="recommend">Would you recommend freeCodeCamp to someone you know?
+        <label for="definitely" class="choice"><input id="definitely" type="radio" name="choice" value="definitely" class="inline"> Definitely</label>
+        <label for="not-sure" class="choice"><input id="not-sure" type="radio" name="choice" value="not-sure" class="inline"> Not Sure</label>
+        <label for="maybe" class="choice"><input id="maybe" type="radio" name="choice" value="maybe" class="inline"> Maybe</label> 
+       </label>
+      </fieldset> 
+      <fieldset>
+        <label for="improvements">What would you like to see improved?
+          <label for="front-end-projects" class="choice"><input id="front-end-projects" type="checkbox" value="front-end-projects" class="inline"> Front-end projects</label>
+          <label for="back-end-projects" class="choice"><input id="back-end-projects" type="checkbox" value="back-end-projects" class="inline"> Back-end projects</label>
+          <label for="data-visualization" class="choice"><input id="data-visualization" type="checkbox" value="data-visualization" class="inline"> Data visualization</label>
+          <label for="challenges" class="choice"><input id="challenges" type="checkbox" value="challenges" class="inline"> Challenges</label>  
+          
+
+        </label>
+
+      </fieldset>
+      <fieldset>
+        <label for="comments">Any comments or suggestions?
+          <textarea id="comments-or-suggestions" name="comments-or-suggestions" rows="5" cols="50" placeholder="Enter your comment or suggestion here..." class="border-radius"></textarea>
+
+        </label>
+        
+      </fieldset>
+      <label><input id="submit" type="submit" name="submit"></label>
+
+    </form>
+
+    </main>
+    
+  </body>
+</html>
